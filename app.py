@@ -1,8 +1,14 @@
 import streamlit as st
-from utils.data_loader import load_data
-from components.charts import sales_chart
 
-st.set_page_config(page_title="My Streamlit App", layout="wide")
+st.title("GlobalJava Roasters")
+st.header("Customer Feedback Form")
+st.write("Your input helps us brew a better experience. Please share your thoughts about our coffee and service.")
 
-st.title("My Streamlit App")
 
+# Write new code below:
+st.write("Did you enjoy your coffee?")
+if st.button("Yes!",key="yes_button"):
+    st.write("Glad you enjoyed it!")
+
+if st.button("No!",key="no_button"):
+    st.write("We're sorry to hear that. We'll strive to improve.")
